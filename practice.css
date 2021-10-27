@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+  list-style-type: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: #c0e7e9;
+}
+
+.accordion {
+  max-width: 800px;
+  padding: 40px;
+}
+
+.content-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #04a9b4;
+  padding: 10px;
+  color: cornsilk;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.content-title .content-icon {
+  background-image: url(/iconmonstr-plus-thin.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  padding-inline: 20px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.content {
+  background: cornsilk;
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.active .content {
+  max-height: 100px;
+}
+
+.active .content-icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*# sourceMappingURL=practice.css.map */
